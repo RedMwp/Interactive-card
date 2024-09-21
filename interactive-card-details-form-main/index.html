@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css" type="text/css" media="all" />
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+<main>
+  <section class="card-section">
+    <section class="cards">
+    <section class="card-front">
+      <img src="images/card-logo.svg" alt=" logo" />
+      <div class="card-front-bottom">
+        <h1><span>0000</span> <span>0000</span> <span>0000</span> <span>0000</span></h1>
+        <section class="card-user">
+          <p>Jane Appleseed</p>
+          <p>00/00</p>
+        </section>
+      </div>
+    </section>  
+    <section class="card-back">
+      <h2>000</h2>
+    </section>
+    </section>
+  </section>
+  <div class="form-section">
+    <form>
+      <div class="control">
+        <label for="name">
+  Cardholder Name</label>
+  <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" />
+      </div>
+      <div class="control">
+        <label for="card">
+  Card Number</label>
+  <input type="text" name="card" id="card" placeholder="
+  e.g. 1234 5678 9123 0000" />
+      </div>
+      <div class="control flex">
+        <div class="date-control ">
+          <label for="date">Exp. Date (MM/YY)
+          </label>
+          <div class="date">
+            
+          <input type="number" name="date" id="date" placeholder="MM" />
+          <input type="number" name="date" id="year" placeholder="YY" />
+          </div>
+        </div>
+        <div class="inner-control">
+          <label for="cvc">cvc</label>
+          <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" />
+        </div>
+      </div>
+      <button type="submit">Confirm</button>
+    </form>
+    
+    
+    <!-- toast -->
+    <article>
+      <img src="images/icon-complete.svg" alt="icon complete" />
+      <h2>Thank you!</h2>
+      <p>We've added your card details</p>
+      <button>Continue</button>
+    </article>
+  </div>
+</main>
+
+  <!-- Completed state start -->
+
+  
+  
+  
+  <script src="main.js" type="module"></script>
+</body>
+</html>
